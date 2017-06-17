@@ -21,7 +21,8 @@ generate <- function(df, pattern = NULL, template = NULL) {
     template <- system.file("main.Rmd", package = "WizRd")
   } 
   
-  render(template, 
+  render(template,
+         output_dir = getwd(),
          params = list(
             set_title = paste("Report for" , as.list(match.call())$df)
          )
