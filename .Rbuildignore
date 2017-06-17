@@ -1,5 +1,5 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 run.R
-*.html
-*.pdf
+.html
+.pdf
