@@ -10,7 +10,7 @@
 #' generate(cars)
 generate <- function(df, pattern = NULL, template = NULL) {
   if (!is.null(pattern)) {
-    df <- df[,grep(pattern, names(df), value = T)]
+    df <- df[grep(pattern, names(df), value = T)]
   }
   
   if (is.null(template)){
