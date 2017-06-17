@@ -3,6 +3,9 @@ output:
     html_document:
         toc: true
         toc_depth: 2
+    pdf_document:
+        toc: true
+        toc_depth: 2
 params: 
     set_title: "Data Report"
 title: "`r params$set_title`"
