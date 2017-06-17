@@ -12,7 +12,11 @@
 
 ```{r}
 #Plots
-hist(col)
+ggplot(data = df, aes(x= col))+
+  geom_histogram(aes(col), na.rm = T)+
+  xlab(col.name)+
+  ylab("Number")+
+  ggtitle(paste("Distribution of", col.name))
 boxplot(col)
 ```
 
