@@ -17,9 +17,6 @@
   \item{prevalence}{prevalence rate}
   \item{YLDs}{years lost due to disability}
   \item{YLLs}{years of life lost due to dying early}
-  \item{price}{price, in US dollars}
-  \item{carat}{weight of the diamond, in carats}
-  ...
 }}
 \source{
 \url{http://www.diamondse.info/}

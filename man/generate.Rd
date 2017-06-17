@@ -4,14 +4,27 @@
 \alias{generate}
 \title{Generate a WizRd Report}
 \usage{
-generate(df)
+generate(df, pattern = NULL, template = NULL, output_format = "all")
 }
 \arguments{
 \item{df}{Dataframe to generate the Report for}
+
+\item{pattern}{Pattern / Regex to use for subsettings the dataframe}
+
+\item{template}{Path to .Rmd template}
+
+\item{output_format}{Format to generate for the report}
 }
 \description{
 Generate a WizRd Report
 }
 \examples{
+Generate a report for the cars dataset
 generate(cars)
+
+# Generate a report for all columns containing "DALY" or "YLD"
+generate(gbd2015, pattern = "DALY|YLD")
+
+# Generate only a html report
+generate(gbd2015, output_format = "html_document")
 }
