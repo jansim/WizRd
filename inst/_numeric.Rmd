@@ -1,16 +1,17 @@
-## Some basics about your Colums 
+
+
+# Column `r col.name`
+
+* **Mean:** `r mean(col, na.rm = T)`
+* **Standard Deviation:** `r sd(col, na.rm = T)`
+* **Sum:** `r sum(col, na.rm = T)`
+
+
+## Plots
+
 
 ```{r}
-# Operations
-mean(col)
-sd(col)
-sum(col)
-```
-
-## Some Plots
-
-```{r echo=FALSE}
-# Plots
+#Plots
 hist(col)
 boxplot(col)
 ```
