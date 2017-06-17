@@ -1,0 +1,18 @@
+Package: WizRd
+Type: Package
+Version: 0.1.0
+Title: A tool to conjure a report for your data with little effort
+Description: *WizRd* conjures a report for you by taking your dataframe and generating some general outputs about it.
+Author: "Lisa Beckmann", "Sophie Breunig", "Jan Simson"
+Depends:
+  R (>= 3.0.0),
+Imports:
+  rmarkdown,
+  knitr,
+  ggplot2
+VignetteBuilder: knitr    
+Date: 2016-06-17
+License: GPL-2
+LazyData: true
+Maintainer: "Lisa Beckmann", "Sophie Breunig", "Jan Simson"
+RoxygenNote: 6.0.1
