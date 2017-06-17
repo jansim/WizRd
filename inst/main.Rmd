@@ -10,8 +10,9 @@ title: "`r params$set_title`"
 
 ```{r setup, include=FALSE}
 opts_chunk$set(echo = FALSE,
-               messages = FALSE,
-               warnings = FALSE)
+               message = FALSE,
+               warning = FALSE
+               )
 ```
 
 # General
