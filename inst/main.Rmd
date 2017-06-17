@@ -22,7 +22,6 @@ for(col.name in names(df)) {
   col <- df[,col.name]
   
   if (is.numeric(col)) {
-    cat("# NUM")
     render_child("_numeric.Rmd")
   }
 }
