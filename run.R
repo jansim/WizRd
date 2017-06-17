@@ -1,3 +1,4 @@
+library(knitr)
 library(rmarkdown)
 
 source("R/generate.R")
