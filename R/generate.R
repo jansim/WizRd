@@ -7,7 +7,11 @@
 #' @export
 #'
 #' @examples
+#' Generate a report for the cars dataset
 #' generate(cars)
+#' 
+#' # Generate a report for all columns containing "DALY" or "YLD"
+#' generate(gbd2015, pattern = "DALY|YLD")
 generate <- function(df, pattern = NULL, template = NULL) {
   if (!is.null(pattern)) {
     df <- df[grep(pattern, names(df), value = T)]
