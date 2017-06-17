@@ -1,5 +1,6 @@
 library(knitr)
 library(rmarkdown)
+library(ggplot2)
 
 source("R/generate.R")
 source("R/render_child.R")
