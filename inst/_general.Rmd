@@ -1,23 +1,23 @@
 
-# Structure
+## Structure
 Compactly display of the internal structure of an R object as a diagnostic function. 
 ```{r}
 kable(str(df))
 ```
 
-# Dimensions
+## Dimensions
 Retrieve or set the dimensions of an object.
 
-###Dimensions: `r dim(df)`
+####Dimensions: `r dim(df)`
 
 
-# Head
+## Head
 Returns the first parts of a dataframe.
 ```{r}
 kable(head(df))
 ```
 
-# Tail
+## Tail
 Returns the last parts of a dataframe.
 ```{r}
 kable(tail(df))
