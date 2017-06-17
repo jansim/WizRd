@@ -1,0 +1,28 @@
+---
+output: html_document
+params: 
+    set_title: "My Title!"
+title: "`r params$set_title`"
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+opts_chunk$set(echo = FALSE,
+               messages = FALSE,
+               warnings = FALSE)
+```
+
+```{r, results='asis'}
+# Generelle 
+render.child("_general.Rmd")
+
+for(col.name in names(df)) {
+  col <- df[,col.name]
+  
+  if (is.numeric(col)) {
+    cat("# NUM")
+    render.child("_numeric.Rmd")
+  }
+}
+```
+

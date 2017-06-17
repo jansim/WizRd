@@ -1,0 +1,29 @@
+# Summary
+Summary of the results of various model fitting functions.
+```{r}
+kable(summary(df))
+```
+
+# Structure
+Compactly display of the internal structure of an R object as a diagnostic function. 
+```{r}
+kable(str(df))
+```
+
+# Dimensions
+Retrieve or set the dimensions of an object.
+```{r}
+kable(dim(df))
+```
+
+# Head
+Returns the first parts of a dataframe.
+```{r}
+kable(head(df))
+```
+
+# Tail
+Returns the last parts of a dataframe.
+```{r}
+kable(tail(df))
+```

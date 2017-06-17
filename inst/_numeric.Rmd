@@ -1,0 +1,17 @@
+## Some basics about your Colums 
+
+```{r}
+# Operations
+mean(col)
+sd(col)
+sum(col)
+```
+
+## Some Plots
+
+```{r echo=FALSE}
+# Plots
+hist(col)
+boxplot(col)
+```
+
