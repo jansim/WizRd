@@ -1,22 +1,21 @@
 
 
-# Column `r col.name`
+## Column `r col.name`
 
 * **Mean:** `r mean(col, na.rm = T)`
 * **Standard Deviation:** `r sd(col, na.rm = T)`
 * **Sum:** `r sum(col, na.rm = T)`
 
 
-## Plots
-
+### Plots
 
 ```{r}
-#Plots
 ggplot(data = df, aes(x= col))+
   geom_histogram(aes(col), na.rm = T)+
   xlab(col.name)+
   ylab("Number")+
-  ggtitle(paste("Distribution of", col.name))
+  ggtitle(paste("Distribution of", col.name))+
+  theme_bw()
 boxplot(col)
 ```
 

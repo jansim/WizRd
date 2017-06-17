@@ -2,7 +2,7 @@
 output:
     html_document:
         toc: true
-        toc_depth: 1
+        toc_depth: 2
 params: 
     set_title: "Data Report"
 title: "`r params$set_title`"
@@ -15,10 +15,13 @@ opts_chunk$set(echo = FALSE,
                warnings = FALSE)
 ```
 
+# General
 ```{r, results='asis'}
-# Generelle 
 render_child("_general.Rmd")
+```
 
+# Columns
+```{r, results='asis'}
 for(col.name in names(df)) {
   col <- df[,col.name]
   
