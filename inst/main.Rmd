@@ -17,14 +17,14 @@ opts_chunk$set(echo = FALSE,
 
 ```{r, results='asis'}
 # Generelle 
-render.child("_general.Rmd")
+render_child("_general.Rmd")
 
 for(col.name in names(df)) {
   col <- df[,col.name]
   
   if (is.numeric(col)) {
     cat("# NUM")
-    render.child("_numeric.Rmd")
+    render_child("_numeric.Rmd")
   }
 }
 ```
