@@ -3,8 +3,8 @@
 \docType{data}
 \name{gbd2015}
 \alias{gbd2015}
-\title{Data from the Global Burden of Disease Study 2015}
-\format{A data frame with 53940 rows and 10 variables:
+\title{Global Burden of Disease Study 2015.}
+\format{A data frame with 316 rows and 11 variables:
 \describe{
   \item{cause_name}{medical cause / disease}
   \item{cause_id}{individual id for each disease}
@@ -19,13 +19,15 @@
   \item{YLLs}{years of life lost due to dying early}
 }}
 \source{
-\url{http://www.diamondse.info/}
+\url{http://ghdx.healthdata.org/gbd-results-tool}
 }
 \usage{
 gbd2015
 }
 \description{
-A dataset containing the prices and other attributes of almost 54,000
-diamonds.
+Global Burden of Disease Study 2015 (GBD 2015) Results.
+Seattle, United States: Institute for Health Metrics and Evaluation (IHME), 2016.
+Available from http://ghdx.healthdata.org/gbd-results-tool.
+For terms and conditions of use, please visit http://www.healthdata.org/about/terms-and-conditions
 }
 \keyword{datasets}
