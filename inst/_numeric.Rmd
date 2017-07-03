@@ -10,12 +10,18 @@
 ### Plots
 
 ```{r}
-ggplot(data = df, aes(x= col))+
+# Histogram
+ggplot(data = df, aes(x= col)) +
   geom_histogram(aes(col), na.rm = T)+
   xlab(col.name)+
   ylab("Number")+
   ggtitle(paste("Distribution of", col.name))+
   theme_bw()
-boxplot(col)
 ```
 
+```{r, fig.height=2.5}
+# Boxplot
+ggplot(data = df, aes(x = col.name, y = col)) +
+  geom_boxplot() +
+  coord_flip()
+```
