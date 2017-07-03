@@ -26,7 +26,7 @@ render_child("_general.Rmd")
 # Columns
 ```{r, results='asis'}
 for(col.name in names(df)) {
-  col <- df[,col.name]
+  col <- unlist(df[,col.name])
   
   if (is.numeric(col)) {
     render_child("_numeric.Rmd")
