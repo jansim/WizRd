@@ -12,6 +12,10 @@ title: "`r params$set_title`"
 ---
 
 ```{r setup, include=FALSE}
+# Load Packages / Attach them
+library(ggplot2)
+library(knitr)
+
 opts_chunk$set(echo = FALSE,
                message = FALSE,
                warning = FALSE

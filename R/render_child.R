@@ -10,5 +10,5 @@
 #' render.child("_general.Rmd")
 #' ```
 render_child <- function(path) {
-  cat(knit_child(path, quiet = T))
+  cat(knitr::knit_child(path, quiet = T))
 }

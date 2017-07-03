@@ -31,7 +31,7 @@ generate <- function(df, pattern = NULL, template = NULL, output_format = "all")
     template <- system.file("main.Rmd", package = "WizRd")
   } 
   
-  render(template,
+  rmarkdown::render(template,
          output_format = output_format,
          output_dir = getwd(),
          params = list(
