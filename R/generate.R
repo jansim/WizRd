@@ -14,9 +14,9 @@
 #' # Generate a report for all columns containing "DALY" or "YLD"
 #' generate(gbd2015, pattern = "DALY|YLD")
 #' 
-#' # Generate only a html report
-#' generate(gbd2015, output_format = "html_document")
-generate <- function(df, pattern = NULL, template = NULL, output_format = "all") {
+#' # Generate all possible formats
+#' generate(gbd2015, output_format = "all")
+generate <- function(df, pattern = NULL, template = NULL, output_format = "html_document") {
   
   if (output_format == "all" || output_format == "pdf_document") {
     # Disable scientific notation when generating a pdf document (R/latex bug)
